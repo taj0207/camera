@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="4dp"
+        android:layout_weight="1.02"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/camera" />
+
+    <TextView
+        android:id="@+id/loc"
+        android:layout_width="356dp"
+        android:layout_height="20dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#333333"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/index"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/city"
+        android:layout_width="65dp"
+        android:layout_height="18dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/loc" />
+
+    <TextView
+        android:id="@+id/limit"
+        android:layout_width="wrap_content"
+        android:layout_height="17dp"
+        app:layout_constraintStart_toEndOf="@+id/city"
+        app:layout_constraintTop_toBottomOf="@+id/loc" />
+
+    <TextView
+        android:id="@+id/longitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        app:layout_constraintStart_toEndOf="@+id/limit"
+        app:layout_constraintTop_toBottomOf="@+id/loc" />
+
+    <TextView
+        android:id="@+id/latitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        app:layout_constraintStart_toEndOf="@+id/longitude"
+        app:layout_constraintTop_toBottomOf="@+id/loc" />
+
+    <TextView
+        android:id="@+id/index"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:textColor="#333333"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
